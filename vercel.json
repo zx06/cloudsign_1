@@ -5,5 +5,10 @@
             "source": "/api/v1/(.+)",
             "destination": "/vercel_api/v1/$1"
         }
-    ]
+    ],
+    "functions": {
+        "vercel_api/v1/*": {
+            "memory": 128
+        }
+    }
 }
